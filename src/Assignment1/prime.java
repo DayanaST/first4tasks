@@ -7,8 +7,8 @@ public class prime {
     }
     public static boolean isprime(int n,int divisor){
         if(n<=1)return false;
-        if(divisor*divisor==n)return false;
-        if(n%divisor==0)return true;
+        if(divisor*divisor==n)return true ;
+        if(n%divisor==0)return false ;
         return isprime(n,divisor+1);
     }
 }
